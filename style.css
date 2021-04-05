@@ -103,8 +103,9 @@
 .btn {
     font-family: 'Allura', cursive;
     font-weight: bold;
-    padding: 5px 5px;
+    padding: 10px 10px;
     border: 1px solid black;
+    font-size: 17px;
     background-color: transparent;
 }
 
@@ -153,6 +154,11 @@
 .blog {
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.blog-intro {
+    display: flex;
 }
 
 .third {
@@ -172,6 +178,30 @@
 .d-common {
     width: 50%;
     border: 2px solid brown;
+}
+
+.blog-description {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.blog-description>p {
+    font-family: 'Allura', cursive;
+    padding: 30px 30px;
+    margin: 17px 10px;
+    text-align: center;
+}
+
+.read {
+    display: flex;
+    justify-content: center;
+}
+
+.read>button {
+    padding: 10px 15px;
+    font-size: 17px;
 }
 
 
