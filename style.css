@@ -13,7 +13,7 @@
 }
 
 .home .first {
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
     width: 50vw;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .second {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* height: 45vh; */
 }
 
@@ -98,6 +98,7 @@
 .more {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -162,7 +163,7 @@
 }
 
 .third {
-    border: 2px solid rgb(153, 153, 255);
+    /* border: 2px solid rgb(153, 153, 255); */
 }
 
 .blog-head,
@@ -177,7 +178,7 @@
 
 .d-common {
     width: 50%;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 .blog-description {
@@ -197,6 +198,7 @@
 .read {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .read>button {
@@ -209,11 +211,36 @@
 
 .info {
     display: flex;
+    background-color: rgb(0, 36, 114);
 }
 
 .d-info {
-    border: 2px solid chartreuse;
+    /* border: 2px solid chartreuse; */
     width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-text {
+    color: white;
+    font-weight: 600;
+    margin: 1px 5px;
+}
+
+.contact {
+    margin: 15px 25px;
+    padding: 10px 10px;
+}
+
+.freq-contact {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+
+.contact-links {
+    margin: 15px 2px;
 }
 
 
@@ -223,6 +250,14 @@
     width: 100vw;
     height: 8vh;
     background-color: #0c163f;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+foot-paragraph {
+    color: rgb(255, 255, 255);
+    font-family: 'Allura', cursive;
 }
 
 
@@ -245,10 +280,28 @@
     text-decoration-color: orange;
 }
 
+.sub-heading {
+    color: rgb(255, 255, 255);
+    font-family: 'Allura', cursive;
+    font-weight: bold;
+    margin: 18px;
+}
+
 .paragraph {
     color: rgb(255, 255, 255);
     font-family: 'Allura', cursive;
     padding: 30px 30px;
     margin: 17px 10px;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.paragraph2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Allura', cursive;
+    margin-left: 18px;
+}
+
+.icon {
+    filter: invert(100%);
+    margin: 2px 12px;
 }
