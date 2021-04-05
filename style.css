@@ -22,6 +22,12 @@
     padding: 20px;
 }
 
+.logo {
+    width: 85px;
+    height: 70px;
+    filter: sepia(100%);
+}
+
 
 /* navbar styling */
 
@@ -107,6 +113,35 @@
     background-color: orange;
 }
 
+.projects {
+    display: flex;
+}
+
+.project-number {
+    font-size: 50px;
+    z-index: -1;
+}
+
+.project {
+    font-family: 'Allura', cursive;
+    padding: 30px 30px;
+    margin: 17px 10px;
+    position: relative;
+    background-color: blanchedalmond;
+}
+
+.project-number {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 80px;
+    color: rgb(255, 217, 0);
+    z-index: 1;
+    opacity: 0.6;
+}
+
 
 /* .more {
     height: 10vh;
@@ -181,7 +216,7 @@
 }
 
 .paragraph {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Allura', cursive;
     padding: 30px 30px;
     margin: 17px 10px;
