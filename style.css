@@ -5,6 +5,32 @@
     padding: 0;
 }
 
+#navigation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+}
+
+.logo {
+    width: 85px;
+    height: 70px;
+    filter: sepia(100%);
+    margin-right: auto;
+}
+
+#navigation::before {
+    content: "";
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
 
 /* home layout */
 
@@ -22,12 +48,6 @@
     padding: 20px;
 }
 
-.logo {
-    width: 85px;
-    height: 70px;
-    filter: sepia(100%);
-}
-
 
 /* navbar styling */
 
@@ -37,11 +57,6 @@
     background-color: rgb(255, 213, 107);
     align-items: center;
     padding: 20px;
-}
-
-#navigation {
-    display: flex;
-    justify-content: center;
 }
 
 .item {
