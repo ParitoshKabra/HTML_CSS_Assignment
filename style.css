@@ -1,9 +1,5 @@
 /* CSS Reset */
 
-body {
-    width: 100%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -59,12 +55,13 @@ body {
 
 .home {
     display: flex;
-    height: 100vh;
+    height: 120vh;
+    width: 100vw;
 }
 
 .home .first {
     /* border: 2px solid tomato; */
-    width: 50%;
+    width: 50vw;
 }
 
 .abstract {
@@ -81,8 +78,9 @@ body {
 
 .abstract .test.test2 {
     display: flex;
+    flex-direction: column;
     flex-basis: 60%;
-    align-items: center;
+    justify-content: center;
 }
 
 .abstract .test.test1 {
@@ -123,11 +121,7 @@ body {
 .project-menu {
     display: flex;
     flex-direction: column;
-}
-
-.second {
-    /* border: 2px solid red; */
-    /* height: 45vh; */
+    width: 100vw;
 }
 
 .project-head {
@@ -154,8 +148,7 @@ body {
 }
 
 .btn {
-    font-family: 'Allura', cursive;
-    font-weight: bold;
+    font-family: "TypoPRO Bebas Neue";
     padding: 10px 10px;
     border: 1px solid black;
     font-size: 17px;
@@ -164,7 +157,7 @@ body {
 
 .btn:hover {
     cursor: pointer;
-    background-color: orange;
+    background-color: rgb(253, 202, 106);
 }
 
 .projects {
@@ -218,6 +211,7 @@ body {
 /* blog section layout */
 
 .blog {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.1);
@@ -225,10 +219,6 @@ body {
 
 .blog-intro {
     display: flex;
-}
-
-.third {
-    /* border: 2px solid rgb(153, 153, 255); */
 }
 
 .blog-head,
@@ -239,6 +229,7 @@ body {
 .blog-intro {
     height: 80%;
     display: flex;
+    justify-content: space-between;
 }
 
 .d-common {
@@ -246,21 +237,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid brown; */
 }
 
 .blog-description {
     display: flex;
-    text-align: center;
-    vertical-align: middle;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .blog-description>p {
+    display: inline;
     font-family: 'Lato', sans-serif;
-    padding: 30px 30px;
-    margin: 17px 10px;
     text-align: center;
+    margin: 1em 2em;
 }
 
 .blog-image {
@@ -271,7 +260,7 @@ body {
 .read {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 1em 0;
 }
 
 .read>button {
@@ -285,6 +274,7 @@ body {
 .info {
     display: flex;
     background-color: rgb(47 59 86);
+    width: 100vw;
 }
 
 .d-info {
@@ -355,7 +345,7 @@ foot-paragraph {
 
 .sub-heading {
     color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
+    font-family: "TypoPRO Bebas Neue";
     font-weight: bold;
     margin: 18px;
 }
@@ -363,7 +353,7 @@ foot-paragraph {
 .paragraph {
     color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 5.9rem;
     padding-right: 2.0rem;
 }
