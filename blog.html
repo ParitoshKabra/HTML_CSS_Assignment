@@ -7,10 +7,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/icon type">
     <title>Blog Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #navigation {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            position: fixed;
+            border: 2px solid black;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 49px;
+            fill: #ffb700;
+            margin-right: auto;
+        }
+        
+        .navbtn {
+            background: transparent;
+            padding: 0.8em;
+            font-family: "TypoPRO Bebas Neue";
+            font-size: 1em;
+            border: none;
+        }
+        
+        .navbtn:hover {
+            cursor: pointer;
+            opacity: 0.6;
+        }
+        
+        .navbtn:focus {
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+        }
+        
+        .item {
+            border: 2px solid brown;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: 4fr 4fr 1fr;
+            grid-gap: 1em;
+        }
+        
+        .element {
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+        }
+        
+        .medium {
+            grid-column: 1/ -1;
+            justify-self: center;
+        }
+        
+        .inside {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .blog {
+            height: 200px;
+            width: 100%;
+        }
+        
+        .heading {
+            text-align: center;
+            margin: 1em 0;
+        }
+        
+        .extra-info {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75em 1em;
+            color: rgb(153, 153, 153);
+            margin-top: auto;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+        }
+        
+        img {
+            border-radius: 6px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <nav id="navigation">
+        <img src="images/imglogo.png" alt="img_logo" class="logo">
+        <div class="itempro" id="item1"><button onclick="window.location.href='../blog.html'" class="navbtn">BLOG</button></div>
+        <div class="itempro" id="item4"><button onclick="window.location.href='#'" class="navbtn">PROJECTS</button></div>
+        <div class="itempro" id="item2"><button onclick="window.location.href='#'" class="navbtn">TEAMS</button></div>
+        <div class="itempro" id="item3"><button onclick="window.location.href='#'" class="navbtn">ALUMNI</button></div>
+        <div class="itempro" id="item5"><button onclick="window.location.href='#'" class="navbtn">*MEMBER</button></div>
+        <div class="itempro" id="item6"><button onclick="window.location.href='#'" class="navbtn">*PROJECT</button></div>
+    </nav>
+    <div class="grid">
+        <div class="item blank"></div>
+        <div class="item content">
+            <button class="element" id="element1">
+                <div class="inside">
+                    <img src="blogI/channeli.jpeg" alt="" class="blog">
+                    <h3 class="heading">The fourth ingredient of channeli</h3>
+                    <hr>
+                    <div class="extra-info"><span class="para">Lorem, ipsum dolor.</span> <span class="para">Jun 15' 20</span></div>
+                </div>
+            </button>
+            <button class="element" id="element2">
+                <div class="inside">
+                    <img src="blogI/design.png" alt="" class="blog">
+                    <h3 class="heading">IMG xDesign</h3>
+                    <hr>
+                    <div class="extra-info"><span class="para">Lorem, ipsum dolor.</span> <span class="para">Jun 15' 20</span></div>
+                </div>
+            </button>
+            <button class="element" id="element3">
+                <div class="inside">
+                    <img src="blogI/git.png" alt="" class="blog">
+                    <h3 class="heading">My git-icious journey at IMG</h3>
+                    <hr>
+                    <div class="extra-info"><span class="para">Lorem, ipsum dolor.</span> <span class="para">Jun 15' 20</span></div>
+                </div>
+            </button>
+            <button class="element" id="element4">
+                <div class="inside">
+                    <img src="blogI/iitr.jpeg" alt="" class="blog">
+                    <h3 class="heading">Content Management System @iitr.ac.in</h3>
+                    <hr>
+                    <div class="extra-info"><span class="para">Lorem, ipsum dolor.</span> <span class="para">Jun 15' 20</span></div>
+                </div>
+            </button>
+            <button class="element" id="element5">
+                <div class="inside">
+                    <img src="blogI/experience.jpeg" alt="" class="blog">
+                    <h3 class="heading">Experience at IMG, IIT Roorkee</h3>
+                    <hr>
+                    <div class="extra-info">
+                        <span class="para">Lorem, ipsum dolor.</span> <span class="para">Jun 15' 20</span></div>
+                </div>
+            </button>
+            <button class="element" id="element6">
+                <div class="inside">
+                    <img src="blogI/shop.png" alt="" class="blog">
+                    <h3 class="heading">Designing a college campus based Buy and Sell app</h3>
+                    <hr>
+                    <div class="extra-info">
+                        <span class="para">Lorem, ipsum dolor.</span> <span class="para">Jun 15' 20</span></div>
+                </div>
+            </button>
+            <a href="#" target="_blank" class="medium"><img src="icons/medium.png" alt="" class="icon"></a>
+        </div>
+        <div class="item blank"></div>
+    </div>
 </body>
 
 </html>

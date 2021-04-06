@@ -35,6 +35,25 @@ body {
     opacity: 0.6;
 }
 
+.navbtn {
+    background: transparent;
+    padding: 0.8em;
+    font-family: "TypoPRO Bebas Neue";
+    font-size: 1em;
+    border: none;
+}
+
+.navbtn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.navbtn:focus {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
 
 /* home layout */
 
@@ -90,18 +109,7 @@ body {
 }
 
 .item {
-    margin: 1em 1em;
-}
-
-#navigation a {
-    text-decoration: none;
-    font-family: "TypoPRO Bebas Neue";
-    color: #263146;
-    font-weight: 600;
-}
-
-#navigation a:hover {
-    opacity: 0.5;
+    margin: 0.6em 1em;
 }
 
 .nav-image {
