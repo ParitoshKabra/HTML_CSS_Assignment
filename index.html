@@ -8,21 +8,29 @@
     <link rel="icon" href="images/favicon.ico" type="image/icon type">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1040px)" href="phone.css">
 </head>
 
 <body>
     <!-- make it responive -->
     <!-- blog section to be rectified -->
     <!-- resolve margin padding issue in navbar -->
-    <nav id="navigation">
-        <img src="images/imglogo.png" alt="img_logo" class="logo">
-        <div class="item" id="item1"><button onclick="window.location.href='../blog.html'" class="navbtn">BLOG</button></div>
-        <div class="item" id="item4"><button onclick="window.location.href='#'" class="navbtn">PROJECTS</button></div>
-        <div class="item" id="item2"><button onclick="window.location.href='#'" class="navbtn">TEAMS</button></div>
-        <div class="item" id="item3"><button onclick="window.location.href='#'" class="navbtn">ALUMNI</button></div>
-        <div class="item" id="item5"><button onclick="window.location.href='#'" class="navbtn">*MEMBER</button></div>
-        <div class="item" id="item6"><button onclick="window.location.href='#'" class="navbtn">*PROJECT</button></div>
-    </nav>
+    <div id="nav">
+        <div class="logobox"><img src="images/imglogo.png" alt="img_logo" class="logo"></div>
+        <nav id="navigation">
+            <div class="item" id="item1"><button onclick="window.location.href='../blog.html'" class="navbtn">BLOG</button></div>
+            <div class="item" id="item4"><button onclick="window.location.href='#'" class="navbtn">PROJECTS</button></div>
+            <div class="item" id="item2"><button onclick="window.location.href='#'" class="navbtn">TEAMS</button></div>
+            <div class="item" id="item3"><button onclick="window.location.href='#'" class="navbtn">ALUMNI</button></div>
+            <div class="item" id="item5"><button onclick="window.location.href='#'" class="navbtn">*MEMBER</button></div>
+            <div class="item" id="item6"><button onclick="window.location.href='#'" class="navbtn">*PROJECT</button></div>
+        </nav>
+        <button id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
     <div class="home">
         <div class="first abstract">
 
@@ -75,7 +83,7 @@
             </div>
         </div>
         <div class="third read">
-            <button class="btn" onclick="window.location.href='HTML_CSS_Assignment/blog.html'">READ</button>
+            <button class="btn" onclick="window.location.href='blog.html'">READ</button>
         </div>
     </div>
     <div class="info">

@@ -1,34 +1,52 @@
 /* CSS Reset */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hamburger {
+    display: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+#hamburger div {
+    background-color: black;
+    margin: 6px 0;
+    width: 35px;
+    height: 5px;
+}
+
+#hamburger :hover {
+    cursor: pointer;
+}
+
+html,
+body {
+    height: 95vh;
+    width: 95vw;
+}
+
+#nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    opacity: 0.6;
 }
 
 #navigation {
     display: flex;
-    width: 100%;
     justify-content: center;
-    position: fixed;
 }
 
 .logo {
-    width: 60px;
+    width: auto;
     height: 49px;
     fill: #ffb700;
-    margin-right: auto;
-}
-
-#navigation::before {
-    content: "";
-    background: rgb(255, 255, 255);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.6;
 }
 
 .navbtn {
@@ -60,7 +78,6 @@
 }
 
 .home .first {
-    /* border: 2px solid tomato; */
     width: 50vw;
 }
 
@@ -103,7 +120,6 @@
     background-color: rgb(255, 213, 107);
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 .item {
@@ -113,6 +129,9 @@
 .nav-image {
     width: 400px;
     height: auto;
+    max-width: 100%;
+    max-height: 50%;
+    display: block;
 }
 
 
@@ -137,6 +156,8 @@
 .section-image {
     width: 300px;
     height: auto;
+    max-width: 100%;
+    max-height: 60%;
     margin: 10px 5px;
     padding: 35px 5px;
 }
@@ -149,7 +170,7 @@
 
 .btn {
     font-family: "TypoPRO Bebas Neue";
-    padding: 10px 10px;
+    padding: 0.4em 0.4em;
     border: 1px solid black;
     font-size: 17px;
     background-color: transparent;
@@ -162,6 +183,8 @@
 
 .projects {
     display: flex;
+    max-width: 100%;
+    justify-content: center;
 }
 
 .project-number {
@@ -187,7 +210,7 @@
     font-weight: bold;
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 100px;
-    color: rgb(255, 217, 0);
+    color: rgb(255, 202, 133);
     z-index: -1;
     opacity: 0.6;
 }
@@ -255,6 +278,8 @@
 .blog-image {
     width: 300px;
     height: auto;
+    max-width: 100%;
+    max-height: 80%;
 }
 
 .read {
@@ -278,7 +303,6 @@
 }
 
 .d-info {
-    /* border: 2px solid chartreuse; */
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -304,6 +328,7 @@
 
 .contact-links {
     margin: 15px 2px;
+    max-width: 100%;
 }
 
 
@@ -331,9 +356,9 @@ foot-paragraph {
 .main-heading {
     font-family: 'Playfair Display';
     color: rgb(248, 209, 108);
-    font-size: 4.3em;
-    padding-left: 5.9rem;
-    padding-right: 2.0rem;
+    font-size: 3.3em;
+    padding-left: 16%;
+    padding-right: 5.2%;
 }
 
 .heading {
@@ -354,8 +379,9 @@ foot-paragraph {
     color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    padding-left: 5.9rem;
-    padding-right: 2.0rem;
+    padding-left: 16%;
+    padding-right: 5.2%;
+    ;
 }
 
 .paragraph2 {
