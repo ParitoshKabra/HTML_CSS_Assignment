@@ -121,14 +121,12 @@ body>div {
     }
     .blog-description {
         margin-top: 10px;
-        border: 2px solid black;
         display: flex;
         justify-content: center;
         width: 100%;
     }
     .blog-description>p {
         font-size: 15px;
-        border: 2px solid maroon;
         position: relative;
         line-height: 1.5;
     }
@@ -141,7 +139,6 @@ body>div {
     }
     .blog-description {
         margin-top: 10px;
-        border: 2px solid black;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -150,7 +147,6 @@ body>div {
     }
     .blog-description>p {
         font-size: 15px;
-        border: 2px solid maroon;
         position: relative;
         line-height: 1.5;
         width: 100%;
