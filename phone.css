@@ -32,10 +32,13 @@ body>div {
 #hamburger {
     display: inline-block;
     margin-right: 6%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .logobox {
     margin-left: 4%;
+    margin-top: 1.5%;
 }
 
 .logo {
@@ -48,6 +51,7 @@ body>div {
     margin: 0;
     padding: 0;
     background-image: linear-gradient( to right, rgb(255 255 255 / 20%) 0%, rgb(255 255 255 / 20%) 80%, rgb(0 0 0 / 0%) 80%, rgb(0 0 0 / 0%) 100%);
+    font-size: 3.0rem;
 }
 
 .main-heading2 {
@@ -60,10 +64,6 @@ body>div {
 
 .paragraph {
     margin: 0;
-}
-
-.abstract .test.test1 {
-    word-wrap: break-word;
 }
 
 .abstract .test {
@@ -79,7 +79,7 @@ body>div {
     align-items: flex-start;
 }
 
-.home {
+#home {
     width: 100%;
     max-width: 100%;
 }
@@ -104,6 +104,6 @@ body>div {
 
 /* contact section */
 
-.info {
+#info {
     flex-direction: column-reverse;
 }

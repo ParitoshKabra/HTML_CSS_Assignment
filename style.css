@@ -16,6 +16,7 @@ body {
     background-color: transparent;
     outline: none;
     border: none;
+    height: max-content;
 }
 
 #hamburger div {
@@ -69,13 +70,13 @@ body {
 
 /* home layout */
 
-.home {
+#home {
     display: flex;
     height: 120vh;
     width: 100vw;
 }
 
-.home .first {
+#home .first {
     width: 50vw;
 }
 
@@ -130,7 +131,7 @@ body {
 
 /* project section layout */
 
-.project-menu {
+#project-menu {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -226,7 +227,7 @@ body {
 
 /* blog section layout */
 
-.blog {
+#blog {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -289,7 +290,7 @@ body {
 
 /* contact section layout */
 
-.info {
+#info {
     display: flex;
     background-color: rgb(47 59 86);
     width: 100vw;
@@ -402,4 +403,8 @@ foot-paragraph {
 .icon {
     filter: invert(100%);
     margin: 2px 12px;
+}
+
+.icon:hover {
+    filter: opacity(60%);
 }
