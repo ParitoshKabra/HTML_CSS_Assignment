@@ -437,6 +437,7 @@ svg {
 }
 
 svg:hover {
+    cursor: pointer;
     filter: none;
     fill: gold;
 }
