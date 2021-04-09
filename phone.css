@@ -132,7 +132,17 @@ body>div {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .project-number {
+        font-size: 10em;
+        top: 0%;
+        left: 3%;
+    }
+}
+
 @media only screen and (max-width:375px) {
+    /* Project Section */
+    /* Blog Section */
     .blog-image {
         width: auto;
         height: 200px;
