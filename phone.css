@@ -147,6 +147,12 @@ body>div {
     }
 }
 
+@media only screen and (max-width: 430px) {
+    .paragraph {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width:375px) {
     /* Project Section */
     /* Blog Section */
