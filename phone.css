@@ -138,6 +138,9 @@ body>div {
         top: 0%;
         left: 3%;
     }
+    .btn {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width:375px) {
