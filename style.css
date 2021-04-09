@@ -67,9 +67,10 @@
 
 .navbtn {
     background: transparent;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding: 9.8px 19.6px;
-    font-size: 1.2em;
+    font-size: 1.0em;
+    font-weight: bold;
     border: none;
     outline: none;
 }
@@ -173,7 +174,7 @@
 }
 
 .btn {
-    font-family: "Bebas Neue Regular";
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     padding: 0.4em 0.9em;
     border: 2px solid black;
@@ -208,7 +209,7 @@
     position: absolute;
     top: 2%;
     left: 10%;
-    font-family: "Bebas Neue Regular";
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 13em;
@@ -410,7 +411,7 @@
 
 .sub-heading {
     color: rgb(255, 255, 255);
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     margin-bottom: 15px;
     /* margin: 18px; */
