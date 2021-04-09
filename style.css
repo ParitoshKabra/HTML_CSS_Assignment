@@ -5,6 +5,17 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* nav js transition */
+
+.transition {
+    transition: background-color 1s;
+}
+
+
+/* nav styling */
+
 #hamburger {
     display: none;
     background-color: transparent;
@@ -44,7 +55,8 @@
 
 .logo {
     width: auto;
-    height: 49px;
+    height: 48px;
+    fill: #f8d16c;
 }
 
 .logobox {
@@ -55,8 +67,7 @@
 
 .navbtn {
     background: transparent;
-    font-family: "Bebas Neue Regular";
-    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
     padding: 9.8px 19.6px;
     font-size: 1.2em;
     border: none;
@@ -399,7 +410,7 @@
 
 .sub-heading {
     color: rgb(255, 255, 255);
-    font-family: "TypoPRO Bebas Neue";
+    font-family: 'Bebas Neue', cursive;
     font-weight: bold;
     margin-bottom: 15px;
     /* margin: 18px; */
@@ -428,7 +439,7 @@
     padding: 0;
 }
 
-svg {
+svg.icon {
     width: 18px;
     height: auto;
     margin-bottom: 13px;
@@ -436,7 +447,7 @@ svg {
     filter: invert(100%);
 }
 
-svg:hover {
+svg.icon:hover {
     cursor: pointer;
     filter: none;
     fill: gold;

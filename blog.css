@@ -39,7 +39,7 @@ body {
 
 .logo {
     width: auto;
-    height: 49px;
+    height: 38px;
 }
 
 .logobox {
@@ -144,12 +144,13 @@ body {
 }
 
 .heading {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
     text-align: start;
     position: relative;
     margin-top: 4px;
     margin-left: 1vw;
+    margin-bottom: 10px;
 }
 
 .extra-info {
