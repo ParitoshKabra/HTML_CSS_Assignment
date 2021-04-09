@@ -36,6 +36,10 @@ body>div {
     margin-bottom: auto;
 }
 
+#hamburger>div {
+    background-color: black;
+}
+
 .logobox {
     margin-left: 4%;
     margin-top: 1.5%;
@@ -53,7 +57,7 @@ body>div {
     padding: 0;
     background-image: linear-gradient( to right, rgb(255 255 255 / 20%) 0%, rgb(255 255 255 / 20%) 80%, rgb(0 0 0 / 0%) 80%, rgb(0 0 0 / 0%) 100%);
     font-size: 3.0rem;
-    margin: 4px 0;
+    margin: 14px 0;
 }
 
 .main-heading2 {
@@ -72,7 +76,7 @@ body>div {
     position: relative;
     margin: 15px 0;
     margin-left: 2%;
-    top: -5%;
+    top: -1%;
 }
 
 .abstract {
