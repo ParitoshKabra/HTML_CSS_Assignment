@@ -6,6 +6,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 /* nav js transition */
 
@@ -375,7 +376,6 @@
 
 /* utility-classes */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 .main-heading1 {
     position: relative;

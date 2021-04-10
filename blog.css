@@ -1,6 +1,6 @@
 /* CSS Reset */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ body {
 
 .navbtn {
     background: transparent;
-    font-family: "Bebas Neue Regular";
+    font-family: 'Oswald', sans-serif;
     font-weight: 800;
     padding: 9.8px 19.6px;
     font-size: 1.2em;
