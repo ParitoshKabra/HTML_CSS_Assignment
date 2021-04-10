@@ -151,6 +151,7 @@ body {
     animation: shake 0.1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    box-shadow: 0 4px rgb(221, 221, 221);
 }
 
 @keyframes shake {
@@ -158,10 +159,10 @@ body {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-1px);
+        transform: translateY(-2.5px);
     }
     100% {
-        transform: translateY(-2px);
+        transform: translateY(-5px);
     }
 }
 
