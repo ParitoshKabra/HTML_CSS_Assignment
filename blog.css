@@ -51,7 +51,7 @@ body {
 .navbtn {
     background: transparent;
     font-family: "Bebas Neue Regular";
-    font-weight: bold;
+    font-weight: 800;
     padding: 9.8px 19.6px;
     font-size: 1.2em;
     border: none;
@@ -97,9 +97,37 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-auto-rows: 340px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 350px;
     grid-gap: 15px;
+}
+
+.blog {
+    height: 250px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.heading {
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    text-align: start;
+    position: relative;
+    margin-top: 4px;
+    margin-left: 1.2vw;
+    margin-bottom: 10px;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em 1em;
+    padding-left: 1.2vw;
+    color: rgb(153, 153, 153);
+    margin-top: auto;
+    border-top: 0.5px solid rgb(221, 221, 221);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }
 
 .element {
@@ -135,34 +163,6 @@ body {
     100% {
         transform: translateY(-2px);
     }
-}
-
-.blog {
-    height: 250px;
-    width: 100%;
-    border-radius: 3px;
-}
-
-.heading {
-    font-size: 1.3rem;
-    font-family: 'Lato', sans-serif;
-    text-align: start;
-    position: relative;
-    margin-top: 4px;
-    margin-left: 2vw;
-    margin-bottom: 10px;
-}
-
-.extra-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.75em 1em;
-    padding-left: 4vw;
-    color: rgb(153, 153, 153);
-    margin-top: auto;
-    border-top: 0.5px solid rgb(221, 221, 221);
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
 }
 
 
@@ -209,5 +209,48 @@ body {
     .logo {
         margin-right: auto;
         margin-left: 1%;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    .content {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-auto-rows: 400px;
+    }
+    .blog {
+        height: 300px;
+        width: 100%;
+        border-radius: 3px;
+    }
+    .heading {
+        font-size: 1.3rem;
+    }
+    .extra-info {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+    .content {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-auto-rows: 450px;
+    }
+    .blog {
+        height: 350px;
+        width: auto;
+        border-radius: 3px;
+    }
+    .heading {
+        font-size: 1.4rem;
+    }
+    .extra-info {
+        font-size: 18px;
+    }
+    .logo {
+        height: 52px;
+        width: auto;
+    }
+    .navbtn {
+        font-size: 1.4em;
     }
 }
