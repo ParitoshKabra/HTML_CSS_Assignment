@@ -326,7 +326,7 @@
 
 .contact {
     margin-left: 6vw;
-    margin-top: 9vh;
+    margin-top: 5vh;
 }
 
 .contact-us {
@@ -415,7 +415,7 @@
     color: rgb(255, 255, 255);
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     font-size: 20px;
     /* margin: 18px; */
 }
@@ -431,7 +431,7 @@
 .paragraph2 {
     color: rgb(221, 221, 221);
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: lighter;
     /* margin-left: 18px; */
     line-height: 1.5;
