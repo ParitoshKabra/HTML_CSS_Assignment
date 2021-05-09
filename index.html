@@ -11,154 +11,168 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 1000px)" href="phone.css">
+    <style>
+        .transit {
+            transition: background-color 300ms linear;
+        }
+    </style>
 </head>
 
-<body>
+<body id="side-main">
     <!-- make it responive -->
     <!-- blog section to be rectified -->
     <!-- resolve margin padding issue in navbar -->
     <!-- <div id="mahamaha"> -->
-    <!-- <div id="maha"> -->
-    <div id="nav">
-        <div class="logobox">
-            <a href="#home"><svg id="maintainer_logo" class="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>IMG Logo</title><path d="M112.1372,46.4979H92.4047A12.0384,12.0384,0,0,0,68.44,46.376q-.0062.0609-.0117.1219h-19.8a12.0754,12.0754,0,0,0-11.8592-10.942,10.53,10.53,0,0,0-3.03.3511,11.9693,11.9693,0,0,0-2.7505,1.0577,12.1591,12.1591,0,0,0-4.2892,3.8442,12.0239,12.0239,0,0,0-2.048,5.689H4.9207A31.3036,31.3036,0,0,1,9.5278,31.1057,32.0782,32.0782,0,0,1,21.097,19.927a31.723,31.723,0,0,1,15.5424-4.073h.0919a31.6749,31.6749,0,0,1,21.0655,8.0834l.7311.6545.7311-.6545a31.7341,31.7341,0,0,1,52.8782,22.5605Z"/><path d="M24.6444,15.854l-.4071.1576A34.123,34.123,0,0,0,5.0586,35.19l-.1576.4072V15.854Z"/><path d="M123.099,80.4251A31.7783,31.7783,0,0,1,92.4551,112.146V92.4135a12.04,12.04,0,0,0,8.7994-18.846q-.1281-.184-.2629-.3634l-.6567-.8755-.8755.6566A31.7457,31.7457,0,0,1,48.6978,48.6868H68.4259a12.04,12.04,0,0,0,23.9788,0h19.7325a31.8883,31.8883,0,0,1-.8383,6.2535l-.1554.6589.5209.4334A31.6679,31.6679,0,0,1,123.099,80.4251Z"/></svg>
+    <div id="container-prime">
+        <div id="nav">
+            <div class="logobox">
+                <a href="#home"><svg id="maintainer_logo" class="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>IMG Logo</title><path d="M112.1372,46.4979H92.4047A12.0384,12.0384,0,0,0,68.44,46.376q-.0062.0609-.0117.1219h-19.8a12.0754,12.0754,0,0,0-11.8592-10.942,10.53,10.53,0,0,0-3.03.3511,11.9693,11.9693,0,0,0-2.7505,1.0577,12.1591,12.1591,0,0,0-4.2892,3.8442,12.0239,12.0239,0,0,0-2.048,5.689H4.9207A31.3036,31.3036,0,0,1,9.5278,31.1057,32.0782,32.0782,0,0,1,21.097,19.927a31.723,31.723,0,0,1,15.5424-4.073h.0919a31.6749,31.6749,0,0,1,21.0655,8.0834l.7311.6545.7311-.6545a31.7341,31.7341,0,0,1,52.8782,22.5605Z"/><path d="M24.6444,15.854l-.4071.1576A34.123,34.123,0,0,0,5.0586,35.19l-.1576.4072V15.854Z"/><path d="M123.099,80.4251A31.7783,31.7783,0,0,1,92.4551,112.146V92.4135a12.04,12.04,0,0,0,8.7994-18.846q-.1281-.184-.2629-.3634l-.6567-.8755-.8755.6566A31.7457,31.7457,0,0,1,48.6978,48.6868H68.4259a12.04,12.04,0,0,0,23.9788,0h19.7325a31.8883,31.8883,0,0,1-.8383,6.2535l-.1554.6589.5209.4334A31.6679,31.6679,0,0,1,123.099,80.4251Z"/></svg>
             </a>
-        </div>
-        <nav id="navigation">
-            <div><button onclick="window.location.href='blog.html'" class="navbtn">BLOG</button></div>
-            <div><button onclick="window.location.href='#project-menu'" class="navbtn">PROJECTS</button></div>
-            <div><button onclick="window.location.href='#'" class="navbtn">TEAMS</button></div>
-            <div><button onclick="window.location.href='#'" class="navbtn">ALUMNI</button></div>
-            <div><button onclick="window.location.href='#'" class="navbtn">*MEMBER</button></div>
-            <div><button onclick="window.location.href='#'" class="navbtn">*PROJECT</button></div>
-        </nav>
-        <button id="hamburger" onclick="sidebar()">
+            </div>
+            <nav id="navigation">
+                <div><button onclick="window.location.href='blog.html'" class="navbtn">BLOG</button></div>
+                <div><button onclick="window.location.href='#project-menu'" class="navbtn">PROJECTS</button></div>
+                <div><button onclick="window.location.href='#'" class="navbtn">TEAMS</button></div>
+                <div><button onclick="window.location.href='#'" class="navbtn">ALUMNI</button></div>
+                <div><button onclick="window.location.href='#'" class="navbtn">*MEMBER</button></div>
+                <div><button onclick="window.location.href='#'" class="navbtn">*PROJECT</button></div>
+            </nav>
+            <button id="hamburger" onclick="sidebar()">
             <div></div>
             <div></div>
             <div></div>
         </button>
-    </div>
-    <div id="home">
-        <div class="first abstract">
+        </div>
+        <div id="home">
+            <div class="first abstract">
 
-            <div class="test test2">
-                <h1 class="main-heading1 ">Playing with </h1>
-                <h1 class="main-heading2">new ideas</h1>
-            </div>
-            <div class="test test1 paragraph">
-                The group flaunts a wide spectrum of projects, influencing over eight thousand lives on campus.
-            </div>
-        </div>
-        <div class="first navbar">
-
-
-            <img class="nav-image" src="https://channeli.in/static/maintainer_site/computer.png" alt="image.png">
-
-        </div>
-    </div>
-
-    <div id="project-menu">
-        <div class="second project-head">
-            <h1 class="heading">Projects</h1>
-
-            <img class="section-image" src="https://channeli.in/static/maintainer_site/project.png" alt="computer.png">
-
-        </div>
-        <div class="second projects">
-            <div class="project" id="project1">
-                <h4 class="project-headings">R-Drive</h4>An inhouse solution for the media storage and sharing at IIT-R. <span class="project-number">1</span></div>
-            <div class="project" id="project2">
-                <h4 class="project-headings">Noticeboard</h4>The official e-noticeboard for IIT-R. <span class="project-number">2</span></div>
-            <div class="project" id="project3">
-                <h4 class="project-headings">No Dues</h4>Digitises the hectic process of obtaining no dues which were previously to be taken from 12-15 offices individually now from your personal desktop. <span class="project-number project-number3">3</span></div>
-            <div class="project" id="project4">
-                <h4 class="project-headings">Connect E-Dil</h4>A fun app active in valentine's week (that time of the year), where students can send and receive roses (even anonymously), make couples, vote for other couples and shoutout their heart out. <span class="project-number">4</span></div>
-        </div>
-        <div class="second more">
-            <button class="btn">VIEW MORE</button>
-        </div>
-    </div>
-    <div id="blog">
-        <div class="third blog-head">
-            <h1 class="heading" style="opacity: 0.8;">Blog</h1>
-        </div>
-        <div class="third blog-intro">
-            <div class="d-common bloggy">
-                <img src="images/blog.png" alt="image.png" class="blog-image">
-            </div>
-            <div class="d-common blog-description">
-                <p>Ken the ins and outs of life and moil at IMG.<br> Find answers to all your whats, whys and hows.</p>
-            </div>
-        </div>
-        <div class="third read">
-            <button class="btn" onclick="window.location.href='blog.html'">READ</button>
-        </div>
-    </div>
-    <div id="info">
-        <div class="d-info contact-us">
-            <div class="contact contact-address">
-                <h2 class="sub-heading">CONTACT US</h2>
-                <p class="paragraph2">
-                    1st floor,ICC, IIT ROORKEE
-                    <br>Roorkee
-                    <br>Uttarakhand, India-247667
-                </p>
-            </div>
-            <div class="contact more-contacts">
-                <div class="freq-contact"><img src="icons/phone.png" alt="" class="icon"><span class="contact-text">01332-284-521</span></div>
-                <div class="freq-contact"><img src="icons/mail.png" alt="" class="icon"><span class="contact-text">img@iitr.com</span></div>
-                <div class="contact-links">
-                    <a href="https://www.facebook.com/IMGIITRoorkee" target="_blank"><svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"class = "icon"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"/></svg></a>
-                    <a href="https://github.com/IMGIITRoorkee" target="_blank"><svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"class = "icon"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/></svg></a>
-                    <a href="https://www.instagram.com/img_iitr/"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26px" height="26px"class = "icon"><path d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z"/></svg></a>
-                    <a href="https://medium.com/img-iit-roorkee">
-                        <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" class="icon">    <path d="M45,4H5C4.448,4,4,4.448,4,5v40c0,0.552,0.448,1,1,1h40c0.552,0,1-0.448,1-1V5C46,4.448,45.552,4,45,4z M40,13.5 l-1.821,2.197C38.064,15.811,38,15.965,38,16.125V32.75c0,0.16,0.064,0.314,0.179,0.428L40,35.546V36H30v-0.454l2.821-2.368 C32.936,33.064,33,32.91,33,32.75V17.879L24.848,36h-0.001h-1.543l0,0L15,18.375v13.108c0,0.22,0.076,0.433,0.215,0.605L18,35.546 V36h-8v-0.454l2.783-3.438C12.923,31.936,13,31.721,13,31.5V16.388c0-0.142-0.05-0.279-0.142-0.388L11,13.5V13h7.097l7.624,16.183 L33.002,13H40V13.5z"/></svg></a>
+                <div class="test test2">
+                    <h1 class="main-heading1 ">Playing with </h1>
+                    <h1 class="main-heading2">new ideas</h1>
+                </div>
+                <div class="test test1 paragraph">
+                    The group flaunts a wide spectrum of projects, influencing over eight thousand lives on campus.
                 </div>
             </div>
+            <div class="first navbar">
+
+
+                <img class="nav-image" src="https://channeli.in/static/maintainer_site/computer.png" alt="image.png">
+
+            </div>
         </div>
-        <div class="contact d-info about">
-            <h2 class="sub-heading">ABOUT</h2>
-            <p class="paragraph2">As the institute evolves, so does IMG. We are a student group, which cultivates technical innovation and drives the development of software systems and niche applications which empathize with the residents of IIT Roorkee, making their digital
-                stay as seamless as possible. We survive on action and results, getting it done faster, better and more efficiently, with one goal in mind: Simplifying the business of college life.</p>
+
+        <div id="project-menu">
+            <div class="second project-head">
+                <h1 class="heading">Projects</h1>
+
+                <img class="section-image" src="https://channeli.in/static/maintainer_site/project.png" alt="computer.png">
+
+            </div>
+            <div class="second projects">
+                <div class="project" id="project1">
+                    <h4 class="project-headings">R-Drive</h4>An inhouse solution for the media storage and sharing at IIT-R. <span class="project-number">1</span></div>
+                <div class="project" id="project2">
+                    <h4 class="project-headings">Noticeboard</h4>The official e-noticeboard for IIT-R. <span class="project-number">2</span></div>
+                <div class="project" id="project3">
+                    <h4 class="project-headings">No Dues</h4>Digitises the hectic process of obtaining no dues which were previously to be taken from 12-15 offices individually now from your personal desktop. <span class="project-number project-number3">3</span></div>
+                <div class="project" id="project4">
+                    <h4 class="project-headings">Connect E-Dil</h4>A fun app active in valentine's week (that time of the year), where students can send and receive roses (even anonymously), make couples, vote for other couples and shoutout their heart out. <span class="project-number">4</span></div>
+            </div>
+            <div class="second more">
+                <button class="btn">VIEW MORE</button>
+            </div>
         </div>
+        <div id="blog">
+            <div class="third blog-head">
+                <h1 class="heading" style="opacity: 0.8;">Blog</h1>
+            </div>
+            <div class="third blog-intro">
+                <div class="d-common bloggy">
+                    <img src="images/blog.png" alt="image.png" class="blog-image">
+                </div>
+                <div class="d-common blog-description">
+                    <p>Ken the ins and outs of life and moil at IMG.<br> Find answers to all your whats, whys and hows.</p>
+                </div>
+            </div>
+            <div class="third read">
+                <button class="btn" onclick="window.location.href='blog.html'">READ</button>
+            </div>
+        </div>
+        <div id="info">
+            <div class="d-info contact-us">
+                <div class="contact contact-address">
+                    <h2 class="sub-heading">CONTACT US</h2>
+                    <p class="paragraph2">
+                        1st floor,ICC, IIT ROORKEE
+                        <br>Roorkee
+                        <br>Uttarakhand, India-247667
+                    </p>
+                </div>
+                <div class="contact more-contacts">
+                    <div class="freq-contact"><img src="icons/phone.png" alt="" class="icon"><span class="contact-text">01332-284-521</span></div>
+                    <div class="freq-contact"><img src="icons/mail.png" alt="" class="icon"><span class="contact-text">img@iitr.com</span></div>
+                    <div class="contact-links">
+                        <a href="https://www.facebook.com/IMGIITRoorkee" target="_blank"><svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"class = "icon"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"/></svg></a>
+                        <a href="https://github.com/IMGIITRoorkee" target="_blank"><svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"class = "icon"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/></svg></a>
+                        <a href="https://www.instagram.com/img_iitr/"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26px" height="26px"class = "icon"><path d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z"/></svg></a>
+                        <a href="https://medium.com/img-iit-roorkee">
+                            <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" class="icon">    <path d="M45,4H5C4.448,4,4,4.448,4,5v40c0,0.552,0.448,1,1,1h40c0.552,0,1-0.448,1-1V5C46,4.448,45.552,4,45,4z M40,13.5 l-1.821,2.197C38.064,15.811,38,15.965,38,16.125V32.75c0,0.16,0.064,0.314,0.179,0.428L40,35.546V36H30v-0.454l2.821-2.368 C32.936,33.064,33,32.91,33,32.75V17.879L24.848,36h-0.001h-1.543l0,0L15,18.375v13.108c0,0.22,0.076,0.433,0.215,0.605L18,35.546 V36h-8v-0.454l2.783-3.438C12.923,31.936,13,31.721,13,31.5V16.388c0-0.142-0.05-0.279-0.142-0.388L11,13.5V13h7.097l7.624,16.183 L33.002,13H40V13.5z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact d-info about">
+                <h2 class="sub-heading">ABOUT</h2>
+                <p class="paragraph2">As the institute evolves, so does IMG. We are a student group, which cultivates technical innovation and drives the development of software systems and niche applications which empathize with the residents of IIT Roorkee, making their
+                    digital stay as seamless as possible. We survive on action and results, getting it done faster, better and more efficiently, with one goal in mind: Simplifying the business of college life.</p>
+            </div>
+        </div>
+        <footer class="foot">
+            <span class="foot-paragraph"> ©2021 Information Management Group</span>
+        </footer>
     </div>
-    <footer class="foot">
-        <span class="foot-paragraph"> ©2021 Information Management Group</span>
-    </footer>
-    <!-- </div> -->
-    <!-- <div id="container">
-            <button class="items" id="item1" onclick="window.location.href='blog.html'">BLOG</button>
-            <button class="items" id="item2" onclick="window.location.href='#project-menu'">PROJECTS</button>
-            <button class="items" id="item3">TEAM</button>
-            <button class="items" id="item4">ALUMNI</button>
-        </div> -->
-    <!-- </div> -->
-    <script>
-        let x;
-        let nav = document.getElementById('nav');
-        let imglogo = document.getElementById('maintainer_logo');
-        let hamdivs = document.querySelectorAll('#hamburger > div');
-        setInterval(() => {
-            x = document.documentElement.scrollTop;
-            if (x == 0) {
-                nav.style.background = 'transparent';
-                nav.style.border = 'none';
-                maintainer_logo.style.fill = '#f8d16c';
+    <div id="container">
+        <button class="items" id="item1" onclick="window.location.href='blog.html'">BLOG</button>
+        <button class="items" id="item2" onclick="window.location.href='#project-menu'">PROJECTS</button>
+        <button class="items" id="item3">TEAM</button>
+        <button class="items" id="item4">ALUMNI</button>
+    </div>
 
-                hamdivs[0].style.backgroundColor = '#f8d16c';
-                hamdivs[1].style.backgroundColor = '#f8d16c';
-                hamdivs[2].style.backgroundColor = '#f8d16c';
 
-            } else {
-                nav.style.background = 'white';
-                nav.style.border = '2px solid rgb(0,0,0,0.1)';
-                maintainer_logo.style.fill = '#000000';
-                hamdivs[0].style.backgroundColor = '#000000';
-                hamdivs[1].style.backgroundColor = '#000000';
-                hamdivs[2].style.backgroundColor = '#000000';
-            }
-        }, 100);
-    </script>
 </body>
+<script>
+    let x;
+    let nav = document.getElementById('nav');
+    let imglogo = document.getElementById('maintainer_logo');
+    let hamdivs = document.querySelectorAll('#hamburger > div');
+    setInterval(() => {
+        x = document.documentElement.scrollTop;
+        if (x == 0) {
+            nav.style.background = 'transparent';
+            nav.style.border = 'none';
+            maintainer_logo.style.fill = '#f8d16c';
+
+            hamdivs[0].style.backgroundColor = '#f8d16c';
+            hamdivs[1].style.backgroundColor = '#f8d16c';
+            hamdivs[2].style.backgroundColor = '#f8d16c';
+
+        } else {
+            nav.classList.add('transit');
+            nav.style.background = 'white';
+            nav.style.border = '2px solid rgb(0,0,0,0.1)';
+            maintainer_logo.style.fill = '#000000';
+            hamdivs[0].style.backgroundColor = '#000000';
+            hamdivs[1].style.backgroundColor = '#000000';
+            hamdivs[2].style.backgroundColor = '#000000';
+        }
+    }, 100);
+    let container = document.getElementById('container');
+    let side = document.getElementById('side-main');
+
+    function sidebar() {
+        side.classList.toggle('flexer');
+        container.classList.toggle('active');
+    }
+</script>
 
 </html>

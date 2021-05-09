@@ -8,13 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-/* nav js transition */
-
-.transition {
-    transition: background-color 1s;
-}
-
-
 /* nav styling */
 
 #hamburger {
@@ -462,24 +455,25 @@ svg.icon:hover {
 
 /* Pls Ignore, I couldn't set it well :( */
 
-#container {
-    position: absolute;
-    border: 0.5px solid rgb(221, 221, 221);
-    background-color: white;
-    z-index: 1000;
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    display: none;
-    padding-top: 45px;
-}
 
-.visible {
+/* why the transition on the reverse journey not working */
+
+#container {
+    position: fixed;
+    border: 0.5px solid rgb(221, 221, 221);
+    width: fit-content;
+    background-color: white;
+    right: -200px;
+    /* z-index: 1000; */
     display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 45px;
+    transition: all 300ms linear;
 }
 
 .items {
-    margin: 4vh;
+    margin: 6vh;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 1em;
@@ -496,4 +490,12 @@ svg.icon:hover {
 
 .items:active {
     border-bottom: 2px solid black;
+}
+
+.flexer {
+    display: flex;
+}
+
+#container.active {
+    right: 0px;
 }
